@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="report_hint">请留下您的宝贵意见或建议！</string>
+    <string name="report">意见反馈</string>
+    <string name="app_name">电脑预约app</string>
+    <string name="action_settings">设置</string>
+    <string name="msg_loginfail">登录失败</string>
+    <string name="login_username">账户</string>
+    <string name="login_password">密码</string>
+    <string name="login_remember">记住密码</string>
+    <string name="login_submit">登录</string>
+    <string name="edit_submit">保存</string>
+    <string name="title_activity_ui_index">UiIndex</string>
+    <!-- /// -->
+    <string name="reserve">预约</string>
+    <string name="warning">当前网络不可用，请检查网络设置。</string>
+    <string name="record">记录</string>
+    <string name="myinfo">我的</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="userName">请输入用户名</string>
+    <string name="userPwd">请输入密码</string>
+    <string name="about">关于</string>
+    <string name="version_lable">程序版本：</string>
+    <string name="about_desc">\t\t凌汐移动互联网实验室
+     \n\t\t移动互联网实验室是创新实验学院于2014年决定重点发展的一个项目开发和学术研究并重的综合型实验室。实验室注重软硬结合， 擅长实体产品的开发.主要平台有Android、IOS、STM32、Zigbee等，已成功开发了“沙画机器人平台”、
+     “基于Zigbee的一个都不能少系统”等产品。经过一段时间的发展，在创新实验学院的领导下，走上了校企合作、市场为先的快速发展道路，旨在培养一支技术精湛、素质过硬、擅长团队协作、适应性强的人才队伍。
+     \n
+     \n官方主页：www.418log.org
+     \nQQ群：99343875</string>
+
+    <!-- spinner内容 -->
+    <string-array name="equipmentgroup">
+        <item>DELL</item>
+        <item>MAC</item>
+        <item>PAD</item>
+    </string-array>
+    <string-array name="stategroup">
+        <item>所有设备</item>
+        <item>当前可预约</item>
+        <item>当前已预约</item>
+    </string-array>
+    <string-array name="timegroup">
+        <item>明天上午</item>
+        <item>明天下午</item>
+        <item>明天晚上</item>
+        <item>后天上午</item>
+        <item>后天下午</item>
+        <item>后天晚上</item>
+    </string-array>
+
+    <string name="title_ui_order">确认订单</string>
+    <string name="title_ui_password">密码修改</string>
+
+</resources>
