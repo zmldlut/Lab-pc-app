@@ -163,23 +163,5 @@
             </RelativeLayout>
         </RelativeLayout>
     
-        <LinearLayout
-            android:id="@+id/btnLayout1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dip"
-            android:layout_marginRight="10dip"
-            android:layout_marginTop="10dip"
-            android:orientation="horizontal" >
-    
-            <Button
-                android:id="@+id/registerBtn"
-                android:layout_width="fill_parent"
-                android:layout_height="45dip"
-                android:background="@drawable/button_selector_btn"
-                android:text="@string/register"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
-        </LinearLayout>
     </LinearLayout>
 </FrameLayout>

@@ -42,14 +42,8 @@ public class UiLogin extends BaseUi {
         }
 
         setAbContentView(R.layout.ui_login);
-        init();
-        // remember password
         settings = getPreferences(Context.MODE_PRIVATE);
-        if (settings.getBoolean("remember", false)) {
-            mCheckBox.setChecked(true);
-            mEditName.setText(settings.getString("username", ""));
-            mEditPass.setText(settings.getString("password", ""));
-        }
+        init();
     }
 
     private void init() {
@@ -59,6 +53,11 @@ public class UiLogin extends BaseUi {
         mCheckBox = (CheckBox) this.findViewById(R.id.login_check);
         mBtnLogin = (Button) this.findViewById(R.id.loginBtn);
         // remember checkbox
+        if (settings.getBoolean("remember", false)) {
+            mCheckBox.setChecked(true);
+            mEditName.setText(settings.getString("username", ""));
+            mEditPass.setText(settings.getString("password", ""));
+        }
         mCheckBox.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener(){
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
