@@ -14,7 +14,7 @@ public class BaseAuth {
     }
 
     static public void setstudent (Student std) {
-        student.setStdNum(std.getStdNum());
+        student.setStdnum(std.getStdnum());
         student.setPassword(std.getPassword());
     }
 

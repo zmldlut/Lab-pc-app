@@ -34,7 +34,7 @@ public class FragmentMine extends BaseFragment implements OnClickListener{
 
     void initView () {
         mUserText = (TextView) mContentView.findViewById(R.id.user_text);
-        mUserText.setText(Student.getInstance().getStdNum());
+        mUserText.setText(Student.getInstance().getStdnum());
         
         mUserLy = (RelativeLayout) mContentView.findViewById(R.id.user_layout);
         mReportLy = (RelativeLayout) mContentView.findViewById(R.id.report_layout);

@@ -4,43 +4,78 @@ import com.zml.base.BaseModel;
 
 public class Student extends BaseModel {
     
-    // model columns
-    public final static String COL_STDNUM = "stdNum";
-    public final static String COL_PASSWORD = "password";
     public final static String COL_CARDID = "cardID";
     public final static String COL_NAME = "name";
-    
-    private String stdNum;
-    private String password;
-    private String cardID;
-    private String name;
-
-    // default is no login
+    public final static String COL_PASSWORD = "password";
+    public final static String COL_STDNUM = "stdNum";
+ // default is no login
     private boolean isLogin = false;
     
-    // single instance for login
-    static private Student customer = null;
+    private String cardID = null;
+    private String email = null;
+    private String grade_id = null;
+    private String is_here = null;
     
-    static public Student getInstance () {
-        if (Student.customer == null) {
-            Student.customer = new Student();
-        }
-        return Student.customer;
+    private String major_id = null;
+    private String name = null;
+    private String password = null;
+    private String phone = null;
+    private String QQ = null;
+    private String stdnum = null;
+    public boolean getLogin() {
+        return isLogin;
     }
 
-    public Boolean getLogin () {
-        return this.isLogin;
-    }
-    
-    public void setLogin (boolean isLogin) {
+    public void setLogin(boolean isLogin) {
         this.isLogin = isLogin;
     }
-    public String getStdNum() {
-        return stdNum;
+    
+    public String getCardID() {
+        return cardID;
     }
 
-    public void setStdNum(String stdNum) {
-        this.stdNum = stdNum;
+    public void setCardID(String cardID) {
+        this.cardID = cardID;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getGrade_id() {
+        return grade_id;
+    }
+
+    public void setGrade_id(String grade_id) {
+        this.grade_id = grade_id;
+    }
+
+    public String getIs_here() {
+        return is_here;
+    }
+
+    public void setIs_here(String is_here) {
+        this.is_here = is_here;
+    }
+
+    public String getMajor_id() {
+        return major_id;
+    }
+
+    public void setMajor_id(String major_id) {
+        this.major_id = major_id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPassword() {
@@ -51,19 +86,44 @@ public class Student extends BaseModel {
         this.password = password;
     }
 
-    public String getCardID() {
-        return cardID;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setCardID(String cardID) {
-        this.cardID = cardID;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public String getName() {
-        return name;
+    public String getQQ() {
+        return QQ;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setQQ(String qQ) {
+        QQ = qQ;
+    }
+
+    public String getStdnum() {
+        return stdnum;
+    }
+
+    public void setStdnum(String stdnum) {
+        this.stdnum = stdnum;
+    }
+
+    // single instance for login
+    static private Student customer = null;
+    public static Student getCustomer() {
+        return customer;
+    }
+
+    static public Student getInstance () {
+        if (Student.customer == null) {
+            Student.customer = new Student();
+        }
+        return Student.customer;
+    }
+
+    public static void setCustomer(Student customer) {
+        Student.customer = customer;
     }
 }

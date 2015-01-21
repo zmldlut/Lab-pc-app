@@ -53,7 +53,7 @@ public class UiReport extends BaseUi {
     private void doTaskSubmit() {
         if (mReportExt.length() > 0) {
             HashMap<String, String> urlParams = new HashMap<String, String>();
-            urlParams.put("report.stdNum", Student.getInstance().getStdNum());
+            urlParams.put("report.stdNum", Student.getInstance().getStdnum());
             urlParams.put("report.report", mReportExt.getText().toString());
             try {
                 doTaskAsync(C.task.report, C.api.report, urlParams);

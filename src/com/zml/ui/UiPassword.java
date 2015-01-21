@@ -56,7 +56,7 @@ public class UiPassword extends BaseUi {
     private void doTaskSubmit() {
         if (mOldPass.length() > 0 && mNewPass.length() > 0 && mConfigPass.length() > 0) {
             HashMap<String, String> urlParams = new HashMap<String, String>();
-            urlParams.put("pass.stdNum", Student.getInstance().getStdNum());
+            urlParams.put("pass.stdNum", Student.getInstance().getStdnum());
             urlParams.put("pass.oldPass", mOldPass.getText().toString());
             urlParams.put("pass.newPass", mNewPass.getText().toString());
             urlParams.put("pass.configPass", mConfigPass.getText().toString());

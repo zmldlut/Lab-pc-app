@@ -87,7 +87,7 @@ public class FragmentOrder extends BaseFragment {
 
     private void doAscTaskLogin() {
         HashMap<String, String> urlParams = new HashMap<String, String>();
-        urlParams.put("stdNum", Student.getInstance().getStdNum());
+        urlParams.put("stdNum", Student.getInstance().getStdnum());
 //        urlParams.put("page", mCurrentPage+"");
 //        urlParams.put("page_count", mPageCount+"");
 //        Log.e("zml",mDeviceType.getSelectedItemId()+"");

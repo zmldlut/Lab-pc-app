@@ -105,17 +105,16 @@ public final class R {
     }
     public static final class id {
         public static final int about_layout=0x7f0a000d;
-        public static final int action_settings=0x7f0a0042;
+        public static final int action_settings=0x7f0a0040;
         public static final int appBtn=0x7f0a0001;
         public static final int btnLayout=0x7f0a002f;
-        public static final int btnLayout1=0x7f0a0034;
-        public static final int config_pass_ext=0x7f0a0040;
+        public static final int config_pass_ext=0x7f0a003e;
         public static final int cs_main_dialog_close=0x7f0a0014;
         public static final int cs_main_dialog_text=0x7f0a0013;
         public static final int description=0x7f0a001a;
         public static final int device_group=0x7f0a0003;
         public static final int equipmentGroupImage=0x7f0a0004;
-        public static final int ext_report=0x7f0a0041;
+        public static final int ext_report=0x7f0a003f;
         public static final int imageView01=0x7f0a0032;
         public static final int imageView02=0x7f0a0033;
         public static final int imageView03=0x7f0a0028;
@@ -143,11 +142,10 @@ public final class R {
         public static final int main_bottom=0x7f0a001b;
         public static final int main_load_bar=0x7f0a0015;
         public static final int moreBtn=0x7f0a0016;
-        public static final int new_pass_ext=0x7f0a003f;
-        public static final int old_pass_ext=0x7f0a003e;
+        public static final int new_pass_ext=0x7f0a003d;
+        public static final int old_pass_ext=0x7f0a003c;
         public static final int order_listView=0x7f0a000f;
         public static final int phone_layout=0x7f0a000c;
-        public static final int registerBtn=0x7f0a0035;
         public static final int report_layout=0x7f0a000b;
         public static final int status_group=0x7f0a0005;
         public static final int submit_btn=0x7f0a0017;
@@ -156,14 +154,14 @@ public final class R {
         public static final int tab_order=0x7f0a001f;
         public static final int timeGroupImage=0x7f0a0007;
         public static final int time_group=0x7f0a0006;
-        public static final int tx_id=0x7f0a0037;
-        public static final int tx_name=0x7f0a0038;
-        public static final int tx_service_tg=0x7f0a003a;
-        public static final int tx_start_time=0x7f0a003c;
-        public static final int tx_status=0x7f0a003b;
-        public static final int tx_stop_time=0x7f0a003d;
-        public static final int tx_type=0x7f0a0039;
-        public static final int tx_user=0x7f0a0036;
+        public static final int tx_id=0x7f0a0035;
+        public static final int tx_name=0x7f0a0036;
+        public static final int tx_service_tg=0x7f0a0038;
+        public static final int tx_start_time=0x7f0a003a;
+        public static final int tx_status=0x7f0a0039;
+        public static final int tx_stop_time=0x7f0a003b;
+        public static final int tx_type=0x7f0a0037;
+        public static final int tx_user=0x7f0a0034;
         public static final int userName=0x7f0a002b;
         public static final int userPwd=0x7f0a002c;
         public static final int user_layout=0x7f0a0009;

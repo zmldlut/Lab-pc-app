@@ -45,7 +45,7 @@ public class UiOrder extends BaseUi {
         mDevice.setStatus(bundle.getString(Device.COL_STATUS));
         
         mTvUser = (TextView) findViewById(R.id.tx_user);
-        mTvUser.setText(Student.getInstance().getStdNum());
+        mTvUser.setText(Student.getInstance().getStdnum());
         mDeviceID = (TextView) findViewById(R.id.tx_id);
         mDeviceID.setText(mDeviceID.getText() + mDevice.getId());
         mDeviceName = (TextView) findViewById(R.id.tx_name);
@@ -88,7 +88,7 @@ public class UiOrder extends BaseUi {
     private void doTaskSubmit() {
         if (mDevice != null) {
             HashMap<String, String> urlParams = new HashMap<String, String>();
-            urlParams.put("stdNum", Student.getInstance().getStdNum());
+            urlParams.put("stdNum", Student.getInstance().getStdnum());
             urlParams.put("device_id", mDevice.getId());
             urlParams.put("start", startTime);
             urlParams.put("stop", stopTime);

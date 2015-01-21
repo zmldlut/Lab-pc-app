@@ -117,7 +117,7 @@ public class UiLogin extends BaseUi {
                 try {
                     student = (Student) message.getResult("Student");
                     // login success
-                    if (student.getStdNum() != null) {
+                    if (student.getStdnum() != null) {
                         BaseAuth.setstudent(student);
                         BaseAuth.setLogin(true);
                     // login fail
