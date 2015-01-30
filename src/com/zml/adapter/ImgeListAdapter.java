@@ -15,15 +15,15 @@ import android.widget.TextView;
 public class ImgeListAdapter extends BaseAdapter {
 
     private Context mContext;
-    //xml转View对象
+    //xml杞琕iew瀵硅薄
     private LayoutInflater mInflater;
-    //单行的布局
+    //鍗曡鐨勫竷灞�
     private int mResource;
-    //列表展现的数据
+    //鍒楄〃灞曠幇鐨勬暟鎹�
     private List mData;
-    //Map中的key
+    //Map涓殑key
     private String[] mFrom;
-    //view的id
+    //view鐨刬d
     private int[] mTo;
 //    private AbImageDownloadQueue mAbImageDownloadQueue = null;
     
@@ -34,7 +34,7 @@ public class ImgeListAdapter extends BaseAdapter {
         this.mResource = resource;
         this.mFrom = from;
         this.mTo = to;
-        //用于将xml转为View
+        //鐢ㄤ簬灏唜ml杞负View
         this.mInflater = LayoutInflater.from(mContext);
 //        this.mAbImageDownloadQueue = AbImageDownloadQueue.getInstance();
     }
@@ -58,11 +58,11 @@ public class ImgeListAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent){
         final ViewHolder holder;
         if(convertView == null){
-             //使用自定义的list_items作为Layout
+             //浣跨敤鑷畾涔夌殑list_items浣滀负Layout
              convertView = mInflater.inflate(mResource, parent, false);
-             //减少findView的次数
+             //鍑忓皯findView鐨勬鏁�
              holder = new ViewHolder();
-             //初始化布局中的元素
+             //鍒濆鍖栧竷灞�腑鐨勫厓绱�
              holder.itemsIcon = ((ImageView) convertView.findViewById(mTo[0])) ;
              holder.itemsTitle = ((TextView) convertView.findViewById(mTo[1]));
              holder.itemsText = ((TextView) convertView.findViewById(mTo[2]));
@@ -70,7 +70,7 @@ public class ImgeListAdapter extends BaseAdapter {
         }else{
              holder = (ViewHolder) convertView.getTag();
         }
-      //获取该行的数据
+      //鑾峰彇璇ヨ鐨勬暟鎹�
         final Map<String, Object>  obj = (Map<String, Object>)mData.get(position);
         holder.itemsIcon.setBackgroundResource((Integer)obj.get("itemsIcon"));
         holder.itemsTitle.setText((String)obj.get("itemsTitle"));
@@ -90,5 +90,4 @@ public class ImgeListAdapter extends BaseAdapter {
         TextView itemsText;
         ImageButton itemsBtn;
     }
-    
 }

@@ -16,7 +16,7 @@ public final class C {
     }
 
     public static final class api {
-        public static final String base             = "http://192.168.9.7:8080";
+        public static final String base             = "http://192.168.9.69:8080";
 
         public static final String login            = "/Lab-demo/pc_app/pc_app_login";
         public static final String device_list      = "/Lab-demo/pc_app/pc_app_device_list";
